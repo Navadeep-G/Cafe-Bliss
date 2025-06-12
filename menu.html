@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - Café Bliss</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Café Bliss</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Our Menu</h2>
+      <p>Freshly made. Lovingly served.</p>
+    </section>
+
+    <section class="menu-section">
+      <h2>Beverages</h2>
+      <div class="menu-grid">
+        <div class="menu-item"><h3>Cappuccino</h3><p>Rich espresso topped with frothy milk</p><span>₹120</span></div>
+        <div class="menu-item"><h3>Iced Latte</h3><p>Chilled coffee with smooth milk</p><span>₹130</span></div>
+        <div class="menu-item"><h3>Masala Chai</h3><p>Spiced Indian tea with milk</p><span>₹80</span></div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2>Snacks</h2>
+      <div class="menu-grid">
+        <div class="menu-item"><h3>Grilled Sandwich</h3><p>Cheesy veggies between crispy toast</p><span>₹150</span></div>
+        <div class="menu-item"><h3>French Fries</h3><p>Golden crispy fries</p><span>₹90</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Café Bliss. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navbar").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

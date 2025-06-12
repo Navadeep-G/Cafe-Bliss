@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #fffaf0;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #4e342e;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-list a.active {
+  border-bottom: 2px solid #fff;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f8ede3;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #4e342e;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  color: #6b4c3b;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #4e342e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.about, .highlight, .menu-section, .contact-info {
+  padding: 2rem;
+}
+
+.menu-section h2, .contact-info strong {
+  color: #4e342e;
+  margin-bottom: 0.5rem;
+}
+
+.menu-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.menu-item {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.menu-item h3 {
+  margin-bottom: 0.3rem;
+}
+
+.menu-item span {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-weight: bold;
+  color: #4e342e;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #4e342e;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  #navbar.active .nav-list {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

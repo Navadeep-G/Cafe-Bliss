@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Café Bliss</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Café Bliss</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to Café Bliss</h2>
+      <p>Where every sip and bite brings comfort to your day.</p>
+      <a href="menu.html" class="btn">View Menu</a>
+    </section>
+
+    <section class="about">
+      <h2>About Us</h2>
+      <p>Located in the heart of the city, Café Bliss is your perfect spot for freshly brewed coffee, warm meals, and delightful desserts.</p>
+    </section>
+
+    <section class="highlight">
+      <h2>Today's Special</h2>
+      <p>Chocolate Brownie with Ice Cream - ₹120</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Café Bliss. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navbar").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
