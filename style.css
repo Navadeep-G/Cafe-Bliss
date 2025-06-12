@@ -123,14 +123,6 @@ footer {
     background-color:#4e342e;
     width:100%;
   }
-  #navbar{
-    position:absolute;
-    top:100%;
-    right:0;
-    background-color:#4e342e;
-    width:100%;
-    display:none;
-  }
   #navbar.active .nav-list {
     display: flex;
   }
