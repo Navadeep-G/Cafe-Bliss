@@ -122,11 +122,21 @@ footer {
    
   }
   #navbar.active .nav-list {
-    display: flex;
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        height: 100px;
+        background-color: #4e342e;
+        padding: 10px;
+        border: #000 solid 2px;
+        border-radius: 5px;
+    
   }
 
   .menu-toggle {
     display: block;
+    margin-left: auto;
   }
 
   .menu-grid {
